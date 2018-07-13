@@ -2,13 +2,13 @@
     margin: 0;
 }
 
-.aui-page-panel2 {
+.login-panel {
     background: #fff;
     border: 1px solid #dfe1e6;
     box-sizing: border-box;
     clear: both;
     display: block;
-    margin-top: 20px;
+    margin-top: 6%;
     padding: 0;
     position: relative;
     -webkit-border-radius: 3px;
@@ -59,6 +59,10 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-name: placeholderShimmer;
     -webkit-animation-timing-function: linear;
+}
+
+.marginb35 {
+    margin-bottom: 35px;
 }
 
 .box {
