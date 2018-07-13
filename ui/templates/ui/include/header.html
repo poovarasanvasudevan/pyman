@@ -1,0 +1,33 @@
+<header id="header" role="banner">
+    <!-- App Header goes inside #header -->
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation" data-aui-responsive="true">
+        <div class="aui-header-primary">
+            <h1 id="logo" class="aui-header-logo aui-header-logo-confluence">
+                <a href="{% url 'START_PAGE' %}"><span class="aui-header-logo-device">AUI</span></a></h1>
+        </div>
+
+        {% if SIGN_IN == None or SIGN_IN == True %}
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li>
+                        <a href="#" aria-controls="aui-menu-documentation" class="aui-dropdown2-trigger" resolved=""
+                           aria-haspopup="true" aria-expanded="false">Sign In</a>
+                        <aui-dropdown-menu id="aui-menu-documentation" resolved="" role="menu"
+                                           class="aui-dropdown2 aui-style-default aui-layer" aria-hidden="true">
+                            <div role="application">
+                                <aui-item-link href="{% url 'Login' %}" resolved="">
+                                    <a role="menuitem" tabindex="-1" href="{% url 'Login' %}">Sign In</a>
+                                </aui-item-link>
+                                <aui-item-link href="docs/upgrade-guide.html" resolved="">
+                                    <a role="menuitem" tabindex="-1" href="docs/upgrade-guide.html">Register</a>
+                                </aui-item-link>
+                            </div>
+                        </aui-dropdown-menu>
+                    </li>
+                </ul>
+            </div>
+        {% endif %}
+
+    </nav>
+
+</header>

@@ -1,0 +1,91 @@
+.margin0 {
+    margin: 0;
+}
+
+.aui-page-panel2 {
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    clear: both;
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+    position: relative;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.aui-header-logo-device {
+    margin-top: 7px;
+}
+
+.padding15 {
+    padding: 15px;
+}
+
+.padding30 {
+    padding: 30px;
+}
+
+.padding0 {
+    padding: 0;
+}
+
+.float-right {
+    float: right;
+}
+
+.margin5 {
+    margin: 5px;
+}
+
+.image-responsive {
+    width: 100%;
+}
+
+.login-image-h img {
+    width: 60% !important;
+}
+
+.shine {
+    background: #f6f7f8 linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%) no-repeat;
+    background-size: 800px 104px;
+    display: inline-block;
+    position: relative;
+
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: placeholderShimmer;
+    -webkit-animation-timing-function: linear;
+}
+
+.box {
+    height: 104px;
+    width: 100px;
+}
+
+.lines {
+    height: 10px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.photo {
+    display: block !important;
+    width: 325px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+@-webkit-keyframes placeholderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+

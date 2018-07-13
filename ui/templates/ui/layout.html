@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    {% block meta %}
+
+    {% endblock %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/grid.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/app.css' %}"/>
+    {#    <link rel="stylesheet" href="{% static 'css/aui-experimental.min.css' %}"/>#}
+    {#    <link rel="stylesheet" href="{% static 'css/aui-iconfonts.min.css' %}"/>#}
+
+    {% block styles %}
+
+    {% endblock %}
+</head>
+<body class="aui-page-hybrid">
+<div>
+
+    {% if user.is_authenticated %}
+        {% include 'ui/include/loginHeader.html' %}
+    {% else %}
+        {% include 'ui/include/header.html' %}
+    {% endif %}
+    <section class="clear" role="main">
+        {% block content %}
+
+        {% endblock %}
+    </section>
+
+    {% include 'ui/include/footer.html' %}
+</div>
+{% load static %}
+<script src="{% static 'js/jq.js' %}"></script>
+<script src="{% static 'js/aui.min.js' %}"></script>
+<script src="{% static 'js/aui-datepicker.min.js' %}"></script>
+<script src="{% static 'js/aui-soy.min.js' %}"></script>
+<script src="{% static 'js/aui-experimental.min.js' %}"></script>
+<script src="{% static 'js/aui-header-async.min.js' %}"></script>
+{% block scripts %}
+
+{% endblock %}
+</body>
+</html>

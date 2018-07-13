@@ -1,0 +1,40 @@
+{% extends 'ui/layout.html' %}
+
+{% block content %}
+    {% load staticfiles %}
+    <div class="row margin0">
+        <div class="col-md-33 col-md-offset-33 aui-page-panel2 padding30">
+            <div class="row margin0">
+                <div class="col-md-50 padding0 text-center hidden-sm">
+                    <div class="col-md-90 login-image-h d-bloc">
+                        <center><img src="{% static 'image/places-19.png' %}"/></center>
+                    </div>
+                </div>
+                <div class="col-md-50 padding0">
+                    <form action="#" method="post" id="d2" class="aui top-label">
+                        <fieldset class="top-label">
+                            <div class="field-group top-label">
+                                <label for="fname">Username<span class="aui-icon icon-required"> required</span></label>
+                                <input class="text" id="fname" name="fname" title="first name" type="text">
+                            </div>
+                            <div class="field-group">
+                                <label for="lname">Password<span class="aui-icon icon-required"> required</span></label>
+                                <input class="text" id="lname" name="lname" title="last name" type="password">
+                            </div>
+
+
+                            <div class="field-group">
+                                <div class="col-md-90">
+                                    <input type="submit" value="Login"
+                                           class="aui-button margin5 aui-button-primary float-right">
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

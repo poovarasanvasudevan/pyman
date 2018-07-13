@@ -1,0 +1,53 @@
+{% extends 'ui/layout.html' %}
+
+{% block content %}
+    {% load staticfiles %}
+    <header class="aui-page-header">
+        <div class="aui-page-header-inner">
+            <div class="aui-page-header-main intro-header">
+                <h1 id="indexheader">Atlassian User
+                    Interface<span id="header-version" class="aui-lozenge aui-lozenge-success">7.9.1</span></h1>
+                <p class="subtitle">AUI is a tailor-made frontend library for creating a user interface according to
+                    the Atlassian Design Guidelines.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <div class="aui-page-panel aui-intro-page">
+        <div class="aui-page-panel-inner">
+            <section class="aui-page-panel-item">
+                <div class="aui-group flatpack-intro">
+                    <div class="aui-item">
+                        <div class="introblob">
+                            <img src="{% static 'image/places-19.png' %}" alt="reading lamp">
+                        </div>
+                        <h3>Component documentation</h3>
+                        <p>AUI provides JavaScript, CSS and Soy templates (or markup patterns) for a range of ready-made
+                            UI components.</p>
+                        <ul>
+                            <li>
+                                <a href="docs">API documentation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="aui-item">
+                        <div class="introblob">
+                            <img src="{% static 'image/places-21.png' %}" alt="rocket ship">
+                        </div>
+                        <h3>Upgrade guide</h3>
+                        <p>
+                            Upgrading from a previous version of AUI? Check what's changed and what to pay
+                            attention to when bumping the version you're using.
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="docs/upgrade-guide.html">Upgrade guide</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}
