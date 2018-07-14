@@ -15,7 +15,7 @@ class UserProfile(models.Model):
         related_name='profile',
         primary_key=True)
 
-    user_ref = models.TextField(default=uuid4())
+    user_ref = models.TextField(default='' , blank=True)
     image = models.ImageField(upload_to="profile_image", blank=True)
 
     class Meta(object):
@@ -30,4 +30,5 @@ def create_user_profile(sender, instance, created, **kwargs):
 
 @receiver(post_save, sender=CustomUser)
 def save_user_profile(sender, instance, **kwargs):
+    instance.profile.user_ref = uuid4()
     instance.profile.save()
