@@ -8,7 +8,8 @@
         <div class="aui-header-secondary">
             <ul class="aui-nav">
                 <li>
-                    <a href="#" aria-controls="aui-menu-documentation" aria-expanded="false">{{ user.username }}</a>
+                    <a href="#" aria-controls="aui-menu-documentation"
+                       aria-expanded="false">{{ user.first_name |default:user.username }}</a>
                 </li>
             </ul>
         </div>

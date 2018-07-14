@@ -1,8 +1,8 @@
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
 
-from kernel.c_models.pages import Pages
 from datetime import datetime
+from kernel.models import Pages
 
 
 @receiver(pre_save, sender=Pages)

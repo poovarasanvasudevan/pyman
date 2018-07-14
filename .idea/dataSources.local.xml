@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="pym@localhost" uuid="4b7bfac6-ea35-4bda-ba5b-cd20a653995e">
+    <data-source name="Django default" uuid="65f6535e-1823-41c6-abca-1a9481c4dfa4">
       <database-info product="PostgreSQL" version="9.4.4" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
       <introspection-schemas>pym:public</introspection-schemas>
     </data-source>

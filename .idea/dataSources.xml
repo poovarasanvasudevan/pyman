@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="pym@localhost" uuid="4b7bfac6-ea35-4bda-ba5b-cd20a653995e">
+    <data-source source="LOCAL" name="Django default" uuid="65f6535e-1823-41c6-abca-1a9481c4dfa4">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/atlas/settings.py</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/pym</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/pym</jdbc-url>
     </data-source>
   </component>
 </project>

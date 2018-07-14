@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'kernel',
     'ui',
     'auth',
+    'users',
+    'client_module',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pipeline'
 ]
-
+AUTH_USER_MODEL = 'users.CustomUser'
 CACHES = {
     'default': {
         'BACKEND': 'diskcache.DjangoCache',
@@ -81,7 +83,6 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'atlas.wsgi.application'
 
 # Database
