@@ -15,7 +15,7 @@ class UserProfile(models.Model):
         related_name='profile',
         primary_key=True)
 
-    user_ref = models.TextField(default='' , blank=True)
+    user_ref = models.TextField(default='', blank=True)
     image = models.ImageField(upload_to="profile_image", blank=True)
 
     class Meta(object):
